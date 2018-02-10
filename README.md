@@ -9,7 +9,7 @@
  
 **请先安装Java运行环境和喜欢的IDE，以及ADB(Android Debug Bridge)。我使用的IDE是IntelliJ IDEA CE 2017，运行环境macOS 10.13.2。**
 1. 将手机连接到电脑（仅限Android手机），打开USB调试，允许此台电脑进行调试；
-2. 导入项目（核心文件：```JumpAssitant/src/JumpAssistant.java```，需要的两个类文件在此文件夹下的```Coordinate.java```和```RGB.java```）；
+2. 导入项目（核心文件：```JumpAssitant/src/JumpAssistant.java```，需要的两个类文件在此文件夹下的```Coordinate.java```和```RGB.java```，out文件夹下的为编译文件）；
 3. 根据自己的情况修改以下常量：
 ```
 ADB_ROUTE        //ADB的所在路径
@@ -19,6 +19,7 @@ SCREEN_WIDTH     //屏幕分辨率宽度
 RATIO            //距离与按压时间的系数，不同的分辨率或DPI可能需要尝试着更改
 COLOR_DIFF_MAX   //紫色小人的底部左右边缘的颜色允许差值，可能会因为分辨率的不同导致渲染的颜色不同
 ```
+4. 运行```JumpAssistant.main()```。
  
 ## 实现思路
  
